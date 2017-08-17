@@ -17,13 +17,14 @@
 	  background-color: #eee;
 	}
 
-	body, h1, p {
+	body, p {
 	  font-family: "Arial", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
 	  font-weight: normal;
 	  margin: 0;
 	  padding: 0;
 	  text-align: center;
 	}
+	
 	
 	.container {
 	  margin-left:  auto;
@@ -43,12 +44,21 @@
 	  font-size: 48px;
 	  font-weight: 300;
 	  margin: 0 0 0px 0;
+	  padding-top: 10px
 	}
 
 	h2{
 	  font-size: 32px;
 	  font-weight: 150;
 	  margin: 0 0 5px 0;
+	}
+	
+	h3{
+	 font-size: 24px;
+	  font-weight: 150;
+	  margin: 0 0 0px 0;
+	
+	
 	}
 
 	.image { 
@@ -71,48 +81,71 @@
 	</style>
 </head>
 
+
+<!-- Here Lies the body of the page -->
 <body>
 
+	<!--Title section-->
 	<div class="container-fluid">
-
-		<img src="C:\TTSYO\images\grinnell.jpg" /> 
 		<h1>Travels of a Twenty Something Year Old</h1>
-		<h2>'People don't take trips… trips take people.'</h2>
+		<h3>'People don't take trips… trips take people.'</h3>
 		<p>John Steinbeck </p>
 
 	</div>
 	
-	<!--Header for places-->
-	<div class="container-fluid">
-		<h1 class = "lead"> Places </h1>
-	</div>
+	<!--Header for About
 	<!--List of countries-->
 	<div class="container">
 		<div class="row">
-			<div class ="col-3">
-				<p> Spain </p>
+			<div class ="col-2">
+				<div class = "row" style = "border-bottom: 3px solid #4588ba; margin-bottom:10px;">
+					<p> <em>About</em> </p>
+				</div>
+				
+				<!--pseudo ddcontainers-->
+				<div class="row" style = "border-bottom: 3px solid #4588ba; margin-bottom:10px;"><!--TODO: put this styling into a css styling above-->
+					<p><em>Europe</em> </p>
+				</div>
+				<div class = "row">
+					<p style= "padding-left: 25px">	Spain</p>
+				</div>	
+				<div class = "row">
+					<p style= "padding-left: 25px">France</p>
+				</div>	
+				<div class = "row">
+					<p style= "padding-left: 25px">Belgium</p>
+				</div>	
+				<div class = "row">
+					<p style= "padding-left: 25px">Italy</p>
+				</div>	
+				<div class = "row" style = "border-bottom: 3px solid #4588ba; margin-bottom:10px;">
+					<p style= "padding-left: 25px">England</p>
+				</div>
+				<div class="row" style = "border-bottom: 3px solid #4588ba; margin-bottom:10px;">
+					<p> <em>Central America</em> </p>
+				</div>
+				<div class = "row">
+					<p style= "padding-left: 25px">Costa Rica</p>
+				</div>	
+				<div class = "row">
+					<p style= "padding-left: 25px">Panama</p>
+				</div>	
 			</div>
-			<div class ="col-3">
-				<p> USA </p>
+			
+			<div class ="col-5">
+				<img src="C:\TTSYO\images\liz ttsyo.jpg" width="300" height="300"> </img>
 			</div>
-			<div class ="col-3">
-				<p> Costa Rica </p>
-			</div>
-			<div class ="col-3">
-				<p> Mexico </p>
+			
+			<div class ="col-5">
+				<p> Hi there, my name is Liz and I'm excited to tell you about my adventures! One of my goals in life 
+				is to travel to all seven continents and also live in a van for awhile while touring the national parks 
+				in the USA. Thanks for visiting my page!
+				</p>
 			</div>
 		</div>
 	</div>
 	
-	<!--pseudo ddcontainers-->
-	<div class="row">
-		<div class="col-2">
-			<p>Parks </p>
-			<p>Countries</p>
-			<p> Other things to add to this left column </p>
-		</div>
-		<div class="col-10"/>
-	</div>
+
 	
 	<div class ="container-fluid">
 		<p> this page is obviously in construction </p>
