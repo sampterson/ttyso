@@ -1,0 +1,70 @@
+body, p {
+  font-family: "American Typewriter", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight:300;
+    margin: 0 0 0px 0;
+    padding-top: 10px;
+    color:blueviolet;
+
+}
+
+h2{
+  font-size: 100px;
+  font-weight: 150;
+  margin: 0 0 5px 0;
+  position: absolute; 
+  top: 50px; 
+  left: 0; 
+  width: 100%;
+}
+
+h3{
+ font-size: 100px;
+  font-weight: 150;
+  margin: 0 0 0px 0;
+  position: absolute;
+  top: 170px; 
+  left: 0; 
+  width: 100%;
+
+
+}
+
+a {
+  color: #3282e6;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    h1{ 
+        font-size: 24px;
+        font-weight:300;
+        margin: 0 0 0px 0;
+        padding-top: 10px;
+        color:blueviolet;        
+    }
+    
+    h2{
+        font-size: 20px;
+        font-weight: 150;
+        margin: 0 0 5px 0;
+        position: absolute; 
+        top: 35px; 
+        left: 0; 
+        width: 100%;
+    }
+    
+    
+    body {
+        background-color: lightblue;
+    }
+}
