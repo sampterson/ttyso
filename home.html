@@ -8,8 +8,11 @@
 
         <title>TTYSO</title>
 
-        <!-- Bootstrap CSS -->`
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
 
         <link rel="stylesheet" type = "text/css" href="css/style.css">
 
@@ -19,12 +22,46 @@
 <!-- Here Lies the body of the page -->
 <body>
 
-	<!--Title section width="90%"-->
-	<div class="container" style="background-color: pink">
+	<!--Carousel time!-->
+    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+        <!--Indicators: the dots that tell you where you are-->
+        <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+        </ol>
+            
+        <!--But i'm not a wrapper: photos to show  -->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="img-fluid" src="images\Header1b.png" alt="Painted Forest">
+            </div>
+            
+            <div class="carousel-item">
+                <!--make photos same dimensions-->
+                <img class="img-fluid" src="images\Header5.png" alt="Barthelona">
+            </div>
+                   
+            <div class="carousel-item">
+                <!--make photos same dimensions-->
+                <img class="img-fluid" src="images\Header4.png" alt="Sand">
+            </div>
+        </div>
+            
+        <!--left right controls-->
+          <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+    </div>
+    
+    
+	<div class="container">
         <div class="row">
             <div class="col-12">
-                <img class="img-fluid" src="images\Header1b.png"/>
-                <h2>Travels of a Twenty <br/> Something Year Old</h2>
+                <h1 style="color: black" >Travels of a Twenty <br/> Something Year Old</h1>
             </div>                 
         </div>
     </div>
@@ -78,6 +115,15 @@
 	<div class ="container">
 		<p> this page is obviously in construction </p>
 	</div>
+    
+    
+    
+    <!-- jQuery and js stuff to include point these to local space-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
+
 	
 </body>
 </html>
