@@ -1,169 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
- <!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-<title>South America</title>
+    <head>
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<style type="text/css">
-	
-	body {
-	  background: linear(238deg, white, gray);
-	  background-color: #fff;
-	}
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	body, p {
-	  font-family: "American Typewriter", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-	  font-weight: normal;
-	  margin: 0;
-	  padding: 0;
-	  text-align: center;
-	}
-	
-	
-	.container {
-	  margin-left:  auto;
-	  margin-right:  auto;
-	  margin-top: 50px;
-	  max-width: 1170px;
-	  padding-right: 15px;
-	  padding-left: 15px;
-	}
+        <title>TTYSO</title>
 
-	.row:before, .row:after {
-	  display: table;
-	  content: " ";
-	}
+        <link rel="stylesheet" type = "text/css" href="../css/style.css">
 
-	h1 {
-	  font-size: 48px;
-	  font-weight: 300;
-	  margin: 0 0 0px 0;
-	  padding-top: 10px
-	}
-
-	h2{
-	  font-size: 100px;
-	  font-weight: 150;
-	  margin: 0 0 5px 0;
-	  position: absolute; 
-	  top: 50px; 
-	  left: 0; 
-	  width: 100%;
-	}
-	
-	h3{
-	 font-size: 100px;
-	  font-weight: 150;
-	  margin: 0 0 0px 0;
-	  position: absolute;
-	  top: 170px; 
-	  left: 0; 
-	  width: 100%;
-	
-	
-	}
-	.image { 
-	   position: relative;
-	   margin-top: 20px
-	   
-	}
-	.lead {
-	  font-size: 21px;
-	  font-weight: 200;
-	  margin-bottom: 5px;
-	}
-
-	p {
-	  margin: 0 0 5px;
-	}
-
-	a {
-	  color: #3282e6;
-	  text-decoration: none;
-	}
-	</style>
-	
-	<!--Create a logo and have it be a link back to home! also do it smart-->
-	<p> <a href="../home"> Lost? Go Home! </a> </p>
-	
-	
-	
-</head>
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        
+        <!--Figure out to use this in a css page-->
+        <style>
+            .picText{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                color:white;
+            }
+        </style>
+        
+    </head>
 
 
+    
+    <body>
+        
+        <!--Top navbar: Full for big screen, hamburger for mobile. Black-->    
+        <div class="container-fluid" style="background: black">
+            <nav class="navbar navbar-dark navbar-expand-sm">
+                
+                <!--Hamburger for small screens-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="nav-content" aria-   expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>   
+                
+               <!--Brand-->
+                <a class="navbar-brand" href="../home.html" >TTSYO</a>
+               
+                <!--Links-->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="europeList" role="button" aria-haspopup="true" aria-expanded="false" >
+                                Europe
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="europeList">
+                                <a class="dropdown-item" href="areas/europe.html">As a whole</a>
+                                <a class="dropdown-item" href="#"> Spain </a>
+                                <a class="dropdown-item" href="#">  London </a> 
+                                <a class="dropdown-item" href="#">  France </a> 
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="nationalParksList" role="button" aria-haspopup="true" aria-expanded="false" >
+                                North America
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="nationalParksList">
+                                <a class="dropdown-item" href="areas/nationalParks.html">As a whole</a>
+                                <a class="dropdown-item" href="#"> Teton </a>
+                                <a class="dropdown-item" href="#">  Glacier </a> 
+                                <a class="dropdown-item" href="#">  Yellowstone </a> 
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="southAmericaList" role="button" aria-haspopup="true" aria-expanded="false" >
+                                South America
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="southAmericList">
+                                <a class="dropdown-item" href="areas/southAmerica.html">As a whole</a>
+                                <a class="dropdown-item" href="#"> wu  </a>
+                                <a class="dropdown-item" href="#">  tang </a> 
+                                <a class="dropdown-item" href="#">  foreever </a> 
+                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" id="gallery" role="button" aria-haspopup="true" aria-expanded="false" >
+                                Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>      
+        
+
+        <!-- some pretty photos-->
+        <div class="container-fluid" id="galleryWall" style="max-width: 90%; margin-top: 1%">
+            
+            <div class="row">
+                <div class="col-6">
+                    <img class="img-fluid" src="../images/1CathedralBasilicaofStJohn.jpg" alt="Cathedral Basilica of St. Johh">
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="../images/2IsolinaLima.jpg" alt="Isolina Lima">
+                </div>
+            </div>
+            
+            <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+                <div class="col-4">
+                     <img  class="img-fluid" src="../images/3Pisaq.jpg" alt="Pisaq">
+                </div>
+                <div class="col-4">
+                    <img  class="img-fluid" src="../images/4LizalmostToDeadWomansPass.jpg" alt="Liz almost to Dead Women's Pass">
+                </div>
+                <div class="col-4">
+                    <img  class="img-fluid" src="../images/5ViewOnWayToDeadWomansPass.jpg" alt="View on way to Dead Women's Pass">
+                </div>
+            </div>
+            
+            <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+                <div class="col-6">
+                    <img class="img-fluid" src="../images/7CityAboveClouds.jpg" alt="City above the clouds">
+                </div>
+                 <div class="col-6">
+                    <img class="img-fluid" src="../images/8Phuyupatamarca.jpg" alt="Phuyupatamarca">
+                </div>
+            </div>
+            
+            <div class="row" style = "margin-top:20px; margin-bottom: 20px">   
+                <div class="col-4">
+                    <img class="img-fluid" src="../images/10LlamasBlockingTrailDay3.jpg" alt="Dang llamas on the road">
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid" src="../images/9ClimbingDownPhuyupatamarka.jpg" alt="Climbing down Phuyupatamarca">
+                </div>
+
+                 <div class="col-4">
+                    <img class="img-fluid" src="../images/11LlamaSelfie.jpg" alt="Llama selfie">
+                </div>
+            </div>
+            
+             <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+                <div class="col-6">
+                    <img class="img-fluid" src="../images/12RainbowOverIntipata.jpg" alt="Rainbow over Intipata">
+                </div>
+                 <div class="col-6">
+                    <img class="img-fluid" src="../images/13FunnyllamaInFrontOfMP.jpg" alt="City in the clouds">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class ="container">
+            <p> in construction </p>
+        </div>
 
 
 
-<!-- Here Lies the body of the page -->
-<body>
+        <!-- jQuery and js stuff-->   
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-	<!--Title section width="90%" will probably want to make a country header css-->
-	<div class="image">
-					
-		<img src="..\images\cuscoAtNight.jpg" height = 400x; width =400> </img>
-		<h3>South America</h3>
-	</div>
-	
-	<div style = "border-bottom: 5px solid #000 ;  border-spacing: 20px; margin-top:20px; margin-left: 5%; margin-right: 5% "> 
-	
-	</div>
-	
-	
-	
-	<div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 
-	
-	<!--Header for About
-	<!--List of countries-->
-	<div class="container">
-	
-		<!--List of countries-->
-		<div class="row" style = "border-bottom: 3px solid #4588ba; margin-bottom:10px;">
-			
-			<div class ="col-3">
-				<p>Peru</p>
-			</div>
-			<div class ="col-3">
-				<p> Peru </p>
-			</div>
-			<div class = "col-3">
-				<p> Peru </p>
-			</div>
-			<div class = "col-3">
-				<p>Peru</p>
-			</div>
-	
-		</div>
-		
-		<!--About section-->
-		<div class="row">
-			<div class ="col-6">
-					<!--<img src="images\liz ttsyo.jpg" width="300" height="300"> </img>-->
-			</div>
-				
-			<div class ="col-12">
-				<p> 
-					So didn't see this one when I lumped Peru in the Central America page. Whoops.
-				</p>
-			</div>
-		</div>
-		
-	</div>
-	
-	
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-	
-	<div class ="container-fluid">
-		<p> this page is obviously in construction </p>
-	</div>
-	
-</body>
+    </body>
 </html>
 
 
