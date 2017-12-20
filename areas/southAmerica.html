@@ -23,7 +23,33 @@
                 transform: translate(-50%, -50%);
                 width: 100%;
                 color:white;
+                background: black;
             }
+            
+            .ttsyoImage{
+                -webkit-transition: opacity .25s;
+                opacity: 1;
+                cursor: pointer;
+            }
+            .ttsyoImage:hover{
+             
+                opacity:.8;
+            }
+            
+            .ttsyoCaption{
+                opacity: 0; /*cpntrol opacity spike with js */
+                position:absolute;
+                top:0%;
+                width:100%;
+                color:white;
+                text-align: center;
+                background: black;
+                transition: opacity .25s;
+                
+            }
+            
+        
+            
         </style>
         
     </head>
@@ -87,61 +113,65 @@
                     </ul>
                 </div>
             </nav>
-        </div>      
+        </div>    
+    
         
-
         <!-- some pretty photos-->
-        <div class="container-fluid" id="galleryWall" style="max-width: 90%; margin-top: 1%">
+        <div class="container-fluid" id="peruWall" style="max-width: 90%; margin-top: 1%">
             
             <div class="row">
-                <div class="col-6">
-                    <img class="img-fluid" src="../images/1CathedralBasilicaofStJohn.jpg" alt="Cathedral Basilica of St. Johh">
+                <div class="col-6"> 
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/1CathedralBasilicaofStJohn.jpg" alt="Cathedral Basilica of St. Johh">
+                     <p class="img-fluid ttsyoCaption">Beautiful, intricate woodworking details embellishing Cathedral Basilica of St. John. Plaza Mayor, Lima, Peru</p>
                 </div>
                 <div class="col-6">
-                    <img class="img-fluid" src="../images/2IsolinaLima.jpg" alt="Isolina Lima">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/2IsolinaLima.jpg" alt="Isolina Lima">
+                      <p class="ttsyoCaption"> Birthday dinner at the unique Isolina. Main course, Peruvian Speghtti Stir-Fry Isolina, Lima, Peru</p>
                 </div>
             </div>
             
             <div class="row" style = "margin-top:20px; margin-bottom: 20px">
                 <div class="col-4">
-                     <img  class="img-fluid" src="../images/3Pisaq.jpg" alt="Pisaq">
+                     <p class="ttsyoCaption">holy cow testing some text on this photo</p>
+                     <img  class="img-fluid ttsyoImage" src="../images/3Pisaq.jpg" alt="Pisaq">
                 </div>
                 <div class="col-4">
-                    <img  class="img-fluid" src="../images/4LizalmostToDeadWomansPass.jpg" alt="Liz almost to Dead Women's Pass">
+                    <img  class="img-fluid ttsyoImage" src="../images/4LizalmostToDeadWomansPass.jpg" alt="Liz almost to Dead Women's Pass">
                 </div>
                 <div class="col-4">
-                    <img  class="img-fluid" src="../images/5ViewOnWayToDeadWomansPass.jpg" alt="View on way to Dead Women's Pass">
+                    <img  class="img-fluid ttsyoImage" src="../images/5ViewOnWayToDeadWomansPass.jpg" alt="View on way to Dead Women's Pass">
                 </div>
             </div>
             
             <div class="row" style = "margin-top:20px; margin-bottom: 20px">
                 <div class="col-6">
-                    <img class="img-fluid" src="../images/7CityAboveClouds.jpg" alt="City above the clouds">
+                    <p class="ttsyoCaption">holy cow testing some text on this photo</p>
+                    <img class="img-fluid ttsyoImage" src="../images/7CityAboveClouds.jpg" alt="City above the clouds">
                 </div>
                  <div class="col-6">
-                    <img class="img-fluid" src="../images/8Phuyupatamarca.jpg" alt="Phuyupatamarca">
+                    <img class="img-fluid ttsyoImage" src="../images/8Phuyupatamarca.jpg" alt="Phuyupatamarca">
                 </div>
             </div>
             
             <div class="row" style = "margin-top:20px; margin-bottom: 20px">   
                 <div class="col-4">
-                    <img class="img-fluid" src="../images/10LlamasBlockingTrailDay3.jpg" alt="Dang llamas on the road">
+                    <img class="img-fluid ttsyoImage" src="../images/10LlamasBlockingTrailDay3.jpg" alt="Dang llamas on the road">
                 </div>
                 <div class="col-4">
-                    <img class="img-fluid" src="../images/9ClimbingDownPhuyupatamarka.jpg" alt="Climbing down Phuyupatamarca">
+                    <img class="img-fluid ttsyoImage" src="../images/9ClimbingDownPhuyupatamarka.jpg" alt="Climbing down Phuyupatamarca">
                 </div>
 
                  <div class="col-4">
-                    <img class="img-fluid" src="../images/11LlamaSelfie.jpg" alt="Llama selfie">
+                    <img class="img-fluid ttsyoImage" src="../images/11LlamaSelfie.jpg" alt="Llama selfie">
                 </div>
             </div>
             
              <div class="row" style = "margin-top:20px; margin-bottom: 20px">
                 <div class="col-6">
-                    <img class="img-fluid" src="../images/12RainbowOverIntipata.jpg" alt="Rainbow over Intipata">
+                    <img class="img-fluid ttsyoImage" src="../images/12RainbowOverIntipata.jpg" alt="Rainbow over Intipata">
                 </div>
                  <div class="col-6">
-                    <img class="img-fluid" src="../images/13FunnyllamaInFrontOfMP.jpg" alt="City in the clouds">
+                    <img class="img-fluid ttsyoImage" src="../images/13FunnyllamaInFrontOfMP.jpg" alt="City in the clouds">
                 </div>
             </div>
             
@@ -154,6 +184,9 @@
 
 
         <!-- jQuery and js stuff-->   
+         <!-- jQuery and js stuff--> 
+        <script src="../js/ttsyoJS.js"></script>
+        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
