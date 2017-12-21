@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>TTYSO</title>
+
+        <link rel="stylesheet" type = "text/css" href="../css/style.css">
+
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        
+        
+        <!--Figure out to use this in a css page-->
+        <style>
+            .picText{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                color:white;
+                background: black;
+            }
+            
+            .ttsyoImage{
+                -webkit-transition: opacity .25s;
+                opacity: 1;
+                cursor: pointer;
+            }
+            .ttsyoImage:hover{
+             
+                opacity:.8;
+            }
+            
+            .ttsyoCaption{
+                opacity: 0; /*cpntrol opacity spike with js */
+                position:absolute;
+                top:0%;
+                width:100%;
+                color:white;
+                text-align: center;
+                background: black;
+                transition: opacity .25s;
+                
+            }
+            
+        
+            
+        </style>
+        
+    </head>
+
+
+    
+    <body>
+        
+<!--Top navbar: Full for big screen, hamburger for mobile. Black-->    
+        <div id="homeNavBar" class="container-fluid sticky" style="background: black">
+            <nav class="navbar navbar-dark navbar-expand-sm">
+                
+                <!--Hamburger for small screens-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="nav-content" aria-   expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>   
+                
+               <!--Brand-->
+                <a class="navbar-brand" href="#" >TTSYO</a>
+               
+                <!--Links-->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="europeList" role="button" aria-haspopup="true" aria-expanded="false" >
+                                Europe
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="europeList">
+                                <a class="dropdown-item" href="../areas/belgium.html">Belgium</a>
+                                <a class="dropdown-item" href="../areas/england.html">England</a>
+                                <a class="dropdown-item" href="../areas/france.html">France</a>
+                                <a class="dropdown-item" href="../areas/italy.html">Italy</a>
+                                <a class="dropdown-item" href="../areas/spain.html">Spain</a> 
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="nationalParksList" role="button" aria-haspopup="true" aria-expanded="false" >
+                                National Parks
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="nationalParksList">
+                                <a class="dropdown-item" href="../areas/glacier.html">Glacier</a>
+                                <a class="dropdown-item" href="../areas/grandCanyon.html">  Grand Canyon </a>
+                                <a class="dropdown-item" href="../areas/grandTeton.html">  Grand Tetons </a> 
+                                <a class="dropdown-item" href="../areas/yellowstone.html">  Yellowstone </a> 
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="South America" role="button" aria-haspopup="true" aria-expanded="false" href="../areas/southAmerica.html">
+                                South America
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="southAmericList">
+                                <a class="dropdown-item" href="../areas/costaRica.html">Costa Rica</a>
+                                <a class="dropdown-item" href="../area/panama.html">Panama</a>
+                                <a class="dropdown-item" href="../areas/peru.html">Peru</a> 
+                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" id="gallery" role="button" aria-haspopup="true" aria-expanded="false" href="gallery/gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>          
+    
+        
+        <!-- some pretty photos-->
+        <div class="container-fluid" id="peruWall" style="max-width: 90%; margin-top: 1%">
+            
+            <div class="row">
+                <div class="col-6"> 
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/1CathedralBasilicaofStJohn.jpg" alt="Cathedral Basilica of St. Johh">
+                     <p class="ttsyoCaption">Beautiful, intricate woodworking details embellishing<br>Cathedral Basilica of St. John. Plaza Mayor, Lima, Peru</p>
+                </div>
+                <div class="col-6">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/2IsolinaLima.jpg" alt="Isolina Lima">
+                      <p class="ttsyoCaption"> Birthday dinner at the unique Isolina. Main course, Peruvian Spaghetti Stir-Fry<br>Isolina, Lima, Peru</p>
+                </div>
+            </div>
+            
+            <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+                <div class="col-4">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/3Pisaq.jpg" alt="Pisaq">
+                    <p class="ttsyoCaption">Standing at the highest point of the archaelogical site, Pisaq. Far below is Urubamba River, flowing through Peru’s Sacred Valley<br>Cusco, Peru </p>
+                </div>
+                <div class="col-4">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/4LizalmostToDeadWomansPass.jpg" alt="Liz almost to Dead Women's Pass">
+                    <p class="ttsyoCaption">Struggling up the Inca Trail on day two. Feeling like a dead woman on the way to Dead Woman’s Pass<br>Inca Trail, Peru </p>
+                </div>
+                <div class="col-4">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/5ViewOnWayToDeadWomansPass.jpg" alt="View on way to Dead Women's Pass">
+                    <p class="ttsyoCaption" >Andes Mountains<br>Inca Trail, Peru </p>
+                </div>
+            </div>
+            
+            <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+                <div class="col-6">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" 
+                    src="../images/7CityAboveClouds.jpg" alt="City above the clouds">
+                    <p class="ttsyoCaption">Hiking above the clouds<br>Inca Trail, Peru</p>
+                </div>
+                 <div class="col-6">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" 
+                    src="../images/8Phuyupatamarca.jpg" alt="Phuyupatamarca">
+                     <p class="ttsyoCaption">The Incan City Above the Clouds<br>Phuyupatamarca, Inca Trail, Peru</p>
+                </div>
+            </div>
+            
+            <div class="row" style = "margin-top:20px; margin-bottom: 20px">   
+                <div class="col-6">
+                    <img class="img-fluid ttsyoImage" src="../images/10LlamasBlockingTrailDay3.jpg" alt="Dang llamas on the road">
+                    <img class="img-fluid ttsyoImage" src="../images/11LlamaSelfie.jpg" alt="Llama selfie">
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid ttsyoImage" src="../images/9ClimbingDownPhuyupatamarka.jpg" alt="Climbing down Phuyupatamarca">
+                </div>
+            </div>
+            
+             <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+                <div class="col-6">
+                    <img class="img-fluid ttsyoImage" src="../images/12RainbowOverIntipata.jpg" alt="Rainbow over Intipata">
+                </div>
+                 <div class="col-6">
+                    <img class="img-fluid ttsyoImage" src="../images/13FunnyllamaInFrontOfMP.jpg" alt="City in the clouds">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class ="container">
+            <p> </p>
+        </div>
+
+
+
+        <!-- jQuery and js stuff-->   
+         <!-- jQuery and js stuff--> 
+        <script src="../js/ttsyoJS.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
