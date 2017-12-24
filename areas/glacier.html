@@ -58,62 +58,15 @@
     
     <body>
         
-        <!--Top navbar: Full for big screen, hamburger for mobile. Black-->    
-        <div class="container-fluid" style="background: black">
-            <nav class="navbar navbar-dark navbar-expand-sm">
-                
-                <!--Hamburger for small screens-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="nav-content" aria-   expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>   
-                
-               <!--Brand-->
-                <a class="navbar-brand" href="../home.html" >TTSYO</a>
-               
-                <!--Links-->
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="europeList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                Europe
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="europeList">
-                                <a class="dropdown-item" href="areas/europe.html">As a whole</a>
-                                <a class="dropdown-item" href="#"> Spain </a>
-                                <a class="dropdown-item" href="#">  London </a> 
-                                <a class="dropdown-item" href="#">  France </a> 
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="nationalParksList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                North America
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="nationalParksList">
-                                <a class="dropdown-item" href="areas/nationalParks.html">As a whole</a>
-                                <a class="dropdown-item" href="#"> Teton </a>
-                                <a class="dropdown-item" href="#">  Glacier </a> 
-                                <a class="dropdown-item" href="#">  Yellowstone </a> 
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="southAmericaList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                South America
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="southAmericList">
-                                <a class="dropdown-item" href="areas/southAmerica.html">As a whole</a>
-                                <a class="dropdown-item" href="#"> wu  </a>
-                                <a class="dropdown-item" href="#">  tang </a> 
-                                <a class="dropdown-item" href="#">  foreever </a> 
-                            </div>
-                        <li class="nav-item">
-                            <a class="nav-link" id="gallery" role="button" aria-haspopup="true" aria-expanded="false" >
-                                Gallery
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>    
+      <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("areasNav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
     
         
         <!-- some pretty photos-->

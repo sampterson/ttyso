@@ -27,8 +27,6 @@ function stickyNav() {
 function setCaptionWidth( img ){
     //gets the last child of the parent node - div -> <p> and
     //sets that width the the img width
-    console.log("In the new function");
-    console.log("image width: " + img.width);
     img.parentNode.lastElementChild.style.width = img.width + "px";
     img.parentNode.lastElementChild.style.opacity = .9;
     
@@ -36,6 +34,17 @@ function setCaptionWidth( img ){
     img.onmouseout = function(){
         img.parentNode.lastElementChild.style.opacity = 0;
     }
-
-   
+    loadNavBar();
 }
+
+/*Loads the navbar from a seperate file*/
+    //function loadNavBar(){
+    //    console.log("trying to load the navbar");
+    //    var element = document.getElementById("navPlaceholder");
+    //    var navNode = document.createNode
+    //    element.appendChild("navbar.html");
+    //    
+    //    
+    //    $("#navPlaceholder").add("navbar.html");
+    //     $("#navPlaceholder").load("navbar.html")
+    //}
