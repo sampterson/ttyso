@@ -58,86 +58,27 @@
     
     <body>
                        
-                <!--Links-->
-<!--Top navbar: Full for big screen, hamburger for mobile. Black-->    
-        <div id="homeNavBar" class="container-fluid sticky" style="background: black">
-            <nav class="navbar navbar-dark navbar-expand-sm">
-                
-                <!--Hamburger for small screens-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="nav-content" aria-   expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>   
-                
-               <!--Brand-->
-                <a class="navbar-brand" href="#" >TTSYO</a>
-               
-                <!--Links-->
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="asiaList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                Africa
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="asia">
-                                <a class="dropdown-item" href="areas/destinationUnexplored.html">Destination Unexplored</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="asiaList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                Asia
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="asia">
-                                <a class="dropdown-item" href="areas/destinationUnexplored.html">Destination Unexplored</a>
-                            </div>
-                        </li>
-                            <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="asiaList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                Australia
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="australia">
-                                <a class="dropdown-item" href="areas/destinationUnexplored.html">Destination Unexplored</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="europeList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                Europe
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="europeList">
-                                <a class="dropdown-item" href="areas/belgium.html">Belgium</a>
-                                <a class="dropdown-item" href="areas/england.html">England</a>
-                                <a class="dropdown-item" href="areas/france.html">France</a>
-                                <a class="dropdown-item" href="areas/italy.html">Italy</a>
-                                <a class="dropdown-item" href="areas/spain.html">Spain</a> 
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="nationalParksList" role="button" aria-haspopup="true" aria-expanded="false" >
-                                National Parks
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="nationalParksList">
-                                <a class="dropdown-item" href="areas/glacier.html">Glacier</a>
-                                <a class="dropdown-item" href="areas/grandCanyon.html">  Grand Canyon </a> 
-                                <a class="dropdown-item" href="areas/grandTeton.html">  Grand Tetons </a> 
-                                <a class="dropdown-item" href="areas/yellowstone.html">  Yellowstone </a> 
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="South America" role="button" aria-haspopup="true" aria-expanded="false" href="areas/southAmerica.html">
-                                South America
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="southAmericList">
-                                <a class="dropdown-item" href="areas/costaRica.html">Costa Rica</a>
-                                <a class="dropdown-item" href="area/panama.html">Panama</a>
-                                <a class="dropdown-item" href="areas/peru.html">Peru</a> 
-                            </div>
-                        <li class="nav-item">
-                            <a class="nav-link" id="gallery" role="button" aria-haspopup="true" aria-expanded="false" href="gallery/gallery.html">
-                                Gallery
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>                
+        
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+            $.get("areasNav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
         
         Time to buy some plane tickets!
+        
+                <!-- jQuery and js stuff--> 
+        <script src="../js/ttsyoJS.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+        
+    </body>
