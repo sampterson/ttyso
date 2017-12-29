@@ -27,14 +27,16 @@ function stickyNav() {
 function setCaptionWidth( img ){
     //gets the last child of the parent node - div -> <p> and
     //sets that width the the img width
+      console.log("img.offsetleft: " + img.offsetLeft);
     img.parentNode.lastElementChild.style.width = img.width + "px";
+    img.parentNode.lastElementChild.style.left = img.offsetLeft + "px";
     img.parentNode.lastElementChild.style.opacity = .9;
     
     //set onMouseLeave
     img.onmouseout = function(){
         img.parentNode.lastElementChild.style.opacity = 0;
     }
-    loadNavBar();
+    
 }
 
 /*Loads the navbar from a seperate file*/
