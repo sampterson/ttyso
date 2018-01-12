@@ -10,6 +10,8 @@
 
        
         <link rel="stylesheet" type = "text/css" href="css/style.css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>    
 
          <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -25,19 +27,52 @@
                 transform: translate(-50%, -50%);
                 width: 100%;
                 color:floralwhite;
-                font-family: "Courier New", Courier, monospace;                
+                font-family: 'Sofia';font-size: 22px;
+                font-size: 600%;
+            
             }
             
           .parallax {
                 /* The image used */
                 background-image: url("images/TTSYO Header16_1170x540.jpg");
+               
 
                 /* Set a specific height - try to set this off device height */
                 min-height: 750px;
 
                 /* Create the parallax scrolling effect */
                 background-attachment: fixed;
-                background-position: center;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+          .parallax2 {
+                /* The image used Home liz selfieAtMachuPichu*/
+                background-image: url("images/Home%20LizCropped.jpg");
+
+                /* Set a specific height - try to set this off device height */
+                min-height: 900px;
+                max-height: 1000px;
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            
+            .parallax3 {
+                /* The image used Home liz */
+                background-image: url("images/samIntroPhoto.jpg");
+
+                /* Set a specific height - try to set this off device height */
+                min-height: 900px;
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position:top;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
@@ -175,13 +210,44 @@
         </div>
         
         <!-- Liz's about me photo-->
-        <div class="container" style="max-height 740: ; max-width: 555px">
+       <!-- <div class="container" style="max-height 740: ; max-width: 555px">
              <img src="images\Home liz.jpg" class="img-fluid"  >
-        </div>
+        </div>-->
+        
+        <!-- Parallax 2 -->
+        <div class="parallax2"></div>
+        
+         <!--just a line-->
+       <div class="container" style="max-width: 555px">
+            <div style = "border-bottom: 5px solid #000; border-spacing: 0px; margin-top:20px; margin-bottom: 20px"></div>	
+       </div>
+        
+        
+         <!--Sam's motto and such-->
+        <div class="container" style="max-width: 555px">
+            <p>
+                Hey there also, fellow traveler!
+            </p>
+            <p style="text-align: left; text-indent: 50px"> 
+                My name is Sam and I also enjoy all this hiking and travel stuff. The size of this this world is something to behold. It's something that is hard to grasp until you are hiking up the side of a dormant volcano, or finding llamas on the Incra Trail blocking your way, or are driving through Montana at 2am sketched out because you haven't seen another car or road in over two hours.
+            </p>
             
-        <div class ="container">
-            <p> this page is in construction </p>
+            <p style="text-align: left; text-indent: 50px"> 
+                This page is a way to preserve these memories that seem to vanish by the third day back at my office job.  To capture that feeling that only experiencing something new can provide. And to have a place to show my family and anyone else interested in where I have been.
+            </p>
+            <p style="text-align: center">
+                Thank you for reading, and happy travels!
+            </p>
         </div>
+        
+        <!--just a line-->
+       <div class="container" style="max-width: 555px">
+            <div style = "border-bottom: 5px solid #000; border-spacing: 0px; margin-top:20px; margin-bottom: 20px"></div>	
+       </div>
+        
+        <!-- Parallax 3 -->
+        <div class="parallax3"></div>
+        
         
         
         <!-- jQuery and js stuff--> 
