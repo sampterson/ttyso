@@ -6,7 +6,7 @@
 
 /*
 * Function to plaster the nav bar to the top of 
-* the screen when it gets scrolled there
+* the screen once it gets scrolled there
 */
 function stickyNav() {
 
