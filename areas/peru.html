@@ -30,15 +30,15 @@
                 -webkit-transition: opacity .25s;
                 opacity: 1;
                 cursor: pointer;
+                margin-bottom: 20px;
             }
+            
             .ttsyoImage:hover{
-             
                 opacity:.8;
-                
             }
             
             .ttsyoCaption{
-                opacity: 0; /*cpntrol opacity spike with js */
+                opacity: 0; /*control opacity spike with js */
                 position:absolute;
                 top:0%;
                 width:100%;
@@ -59,7 +59,7 @@
     
     <body>
         
- <!--Navigation bar-->
+        <!--Navigation bar-->
         <div id="nav-placeholder"></div>
 
         <script src="//code.jquery.com/jquery.min.js"></script>
@@ -74,85 +74,82 @@
             
             <div class="row">
                 <div class="col-sm-6"> 
-                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/1CathedralBasilicaofStJohn.jpg" alt="Cathedral Basilica of St. Johh">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/1CathedralBasilicaofStJohn.jpg" alt="Cathedral Basilica of St. Johh">
                      <p class="ttsyoCaption">Beautiful, intricate woodworking details embellishing<br>Cathedral Basilica of St. John. Plaza Mayor, Lima, Peru</p>
                 </div>
                 <div class="col-sm-6">
-                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/2IsolinaLima.jpg" alt="Isolina Lima">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/2IsolinaLima.jpg" alt="Isolina Lima">
                       <p class="ttsyoCaption"> Birthday dinner at the unique Isolina. Main course, Peruvian Spaghetti Stir-Fry<br>Isolina, Lima, Peru</p>
                 </div>
             </div>
             
-            <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+            <div class="row">
                 <div class="col-sm-4">
-                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/3Pisaq.jpg" alt="Pisaq">
-                    <p class="ttsyoCaption">Standing at the highest point of the archaelogical site, Pisaq. Far below is Urubamba River, flowing through Peru’s Sacred Valley<br>Cusco, Peru </p>
+                   <div>
+                       <img onmouseover="setCaptionWidth(this)" class="img-fluid  ttsyoImage " src="../images/3Pisaq.jpg" alt="Pisaq">
+                       <p class="ttsyoCaption">Standing at the highest point of the archaelogical site, Pisaq. Far below is Urubamba River, flowing through Peru’s Sacred Valley<br>Cusco, Peru </p>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/4LizalmostToDeadWomansPass.jpg" alt="Liz almost to Dead Women's Pass">
-                    <p class="ttsyoCaption">Struggling up the Inca Trail on day two. Feeling like a dead woman on the way to Dead Woman’s Pass<br>Inca Trail, Peru </p>
+                    <div>
+                        <img  onmouseover="setCaptionWidth(this)" class="img-fluid  ttsyoImage " src="../images/4LizalmostToDeadWomansPass.jpg" alt="Liz almost to Dead Women's Pass">
+                        <p class="ttsyoCaption">Struggling up the Inca Trail on day two. Feeling like a dead woman on the way to Dead Woman’s Pass<br>Inca Trail, Peru </p>
+                    </div>
                 </div>
                 <div class="col-sm-4">
-                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/5ViewOnWayToDeadWomansPass.jpg" alt="View on way to Dead Women's Pass">
-                    <p class="ttsyoCaption" >Andes Mountains<br>Inca Trail, Peru </p>
+                    <div>
+                        <img  onmouseover="setCaptionWidth(this)" class="img-fluid  ttsyoImage" src="../images/5ViewOnWayToDeadWomansPass.jpg" alt="View on way to Dead Women's Pass">
+                        <p class="ttsyoCaption" >Andes Mountains<br>Inca Trail, Peru </p>
+                    </div>
                 </div>
             </div>
             
-            <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+            <div class="row">
                 <div class="col-sm-6">
-                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" 
-                    src="../images/7CityAboveClouds.jpg" alt="City above the clouds">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/7CityAboveClouds.jpg" alt="City above the clouds">
                     <p class="ttsyoCaption">Hiking above the clouds<br>Inca Trail, Peru</p>
                 </div>
                  <div class="col-sm-6">
-                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" 
-                    src="../images/8Phuyupatamarca.jpg" alt="Phuyupatamarca">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/8Phuyupatamarca.jpg" alt="Phuyupatamarca">
                      <p class="ttsyoCaption">The Incan City Above the Clouds<br>Phuyupatamarca, Inca Trail, Peru</p>
                 </div>
             </div>
             
-            <div class="row" style = "margin-top:20px; margin-bottom: 20px" >
+            <div class="row">
                <div class="col-sm-12">
-                   <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/9ClimbingDownPhuyupatamarka.jpg" alt="Climbing down Phuyupatamarca">
+                   <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/9ClimbingDownPhuyupatamarka.jpg" alt="Climbing down Phuyupatamarca">
                     <p class="ttsyoCaption">Gringo killer steps<br>Phuyupatamarca, Inca Trail, Peru</p>
-                    
                 </div>
             </div>
             
-            <div class="row" style = "margin-top:20px; margin-bottom: 20px">   
+            <div class="row">   
                 <div class="col-sm-6">
-                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/10LlamasBlockingTrailDay3.jpg" alt="Dang llamas on the road">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/10LlamasBlockingTrailDay3.jpg" alt="Dang llamas on the road">
                     <p class="ttsyoCaption">Llamas blocking the trail<br>Phuyupatamarca, Inca Trail, Peru</p>
                     
                 </div>
                 <div class="col-sm-6">
-                   <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/11LlamaSelfie.jpg" alt="Llama selfie">
+                   <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/11LlamaSelfie.jpg" alt="Llama selfie">
                     <p class="ttsyoCaption">Llama selfie<br>Inca Trail, Peru</p>
                 </div>
             </div>
             
             
-             <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+             <div class="row">
                 <div class="col-sm-12">
-                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/12RainbowOverIntipata.jpg" alt="Rainbow over Intipata">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/12RainbowOverIntipata.jpg" alt="Rainbow over Intipata">
                     <p class="ttsyoCaption">Rainbow over Intipata<br>Inca Trail, Peru</p>
                 </div>
             </div>
             
-            <div class="row" style = "margin-top:20px; margin-bottom: 20px">
+            <div class="row">
                 <div class="col-sm-12">
-                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage" src="../images/13FunnyllamaInFrontOfMP.jpg" alt="City in the clouds">
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/13FunnyllamaInFrontOfMP.jpg" alt="City in the clouds">
                      <p class="ttsyoCaption">Travel book pic<br>Machu Picchu, Peru</p>
                 </div>
             </div>
             
         </div>
-
-        <div class ="container">
-            <p> </p>
-        </div>
-
-
 
         <!-- jQuery and js stuff-->   
          <!-- jQuery and js stuff--> 
