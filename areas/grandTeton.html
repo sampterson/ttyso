@@ -30,6 +30,7 @@
                 -webkit-transition: opacity .25s;
                 opacity: 1;
                 cursor: pointer;
+                margin-bottom: 20px;
             }
             .ttsyoImage:hover{
              
@@ -59,7 +60,7 @@
     <body>
                        
         
-        <!--Navigation bar-->
+       <!--Navigation bar-->
         <div id="nav-placeholder"></div>
 
         <script src="//code.jquery.com/jquery.min.js"></script>
@@ -69,12 +70,79 @@
             });
         </script>
         
-        <div class="container-fluid">
-            <h1>Teton photos coming soon!</h1>
+        <!-- some pretty photos-->
+        <div class="container-fluid" id="tetonWall" style="max-width: 90%; margin-top: 1%">
+            
+             <div class="row">
+                <div class="col-sm-6">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons1b.jpg" alt="Making it">
+                      <p class="ttsyoCaption">Making it!<br>Somewhere in Wyoming, USA</p>
+                </div>
+                <div class="col-sm-6"> 
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons1a.jpg" alt="Made it!">
+                     <p class="ttsyoCaption">Made it!<br>Grand Teton National Park, Wyoming, USA</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons3a.jpg" alt="Sleeping">
+                      <p class="ttsyoCaption">Reflections<br>Jenny Lake, Grand Teton National Park, USA</p>
+                </div>
+            </div>
+            
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons2a.jpg" alt="Sleeping">
+                      <p class="ttsyoCaption">Rest & Recovery<br>Jenny Lake Campground, Grand Teton National Park, USA</p>
+                </div>
+                <div class="col-sm-6"> 
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons2b.jpg" alt="Pensive Liz">
+                     <p class="ttsyoCaption">Mountainscape<br>Snake River, Wyoming, USA</p>
+                </div>
+            </div>
+                
+                <div class="row">
+                <div class="col-sm-12">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons3b.jpg" alt="Sleeping">
+                      <p class="ttsyoCaption">Full range<br>Grand Teton National Park, USA</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons5a.jpg" alt="Sleeping">
+                      <p class="ttsyoCaption">Hiking<br>Grand Teton National Park, USA</p>
+                </div>
+                <div class="col-sm-6"> 
+                    <img onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons5b.jpg" alt="Pensive Liz">
+                     <p class="ttsyoCaption">Buds and brews<br>Jenny Lake Campground, Grand Teton National Park, USA</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons4a.jpg" alt="Sleeping">
+                      <p class="ttsyoCaption">42 mile scenic drive<br>Jenny Lake, Grand Teton National Park, USA</p>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-sm-12">
+                    <img  onmouseover="setCaptionWidth(this)" class="img-fluid ttsyoImage " src="../images/Tetons4b.jpg" alt="Sleeping">
+                      <p class="ttsyoCaption">Cunningham Cabin<br>Grand Teton National Park, USA</p>
+                </div>
+            </div>
+            
         </div>
+            
         
         
-        <!-- jQuery and js stuff--> 
+        
+        
+        <!-- jQuery and js stuff-->   
+         <!-- jQuery and js stuff--> 
         <script src="../js/ttsyoJS.js"></script>
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -83,5 +151,5 @@
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-        
     </body>
+</html>
